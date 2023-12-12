@@ -1,0 +1,427 @@
+
+/* Reset some default styles */
+ body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 100px;
+    height:100px;
+    
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbdbda;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: right; /* Align navigation to the right */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: #ff9900;
+}
+
+/* Change link color when clicked */
+nav a:active {
+    color: #ff0000;
+}
+.book-now-button {
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    transition: background-color 0.3s;
+}
+
+/* Change button background color on hover */
+.book-now-button:hover {
+    background-color: #ff6600;
+}
+.slideshow{
+    display:flex;
+    overflow: hidden;
+}
+.slide{
+    flex:0 0 100%; /*each slide full width*/
+    transition: transform 1s ease-in-out; /* Smooth slide transition */
+}
+.slide img{
+    width: 100%;
+    height: 100px;
+}
+/*ading animation*/
+@keyframes slideAnimation{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-200%);}
+}
+.slideshow.auto{
+    animation:slideAnimation 4s linear infinite;
+}
+/* Main content styles */
+.content {
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.image-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.column {
+    flex-basis: calc(33.33% - 20px); /* Each column takes up one-third of the space with margin in between */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+/* Footer styles */
+.footer1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footercontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footersect {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.footersect h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footersect{
+    flex:1;
+    margin: 10px;
+    text-align:center;
+    border-right:1px solid #666;
+    padding-right: 20px; 
+}
+.footersect:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+.footersect h3{
+    border-right: none;
+    padding-right:0;
+}
+
+/* Subscribe form styles */
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Social media icons */
+.socialmedia {
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #070707;
+    font-size: 9px;
+}
+.socialmedia a{width:10px;
+            height: 10px;
+        }
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  /* Instagram */
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+/* Adjust the table size and style */
+.branch-summary {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px; 
+    border: 1px solid #ccc;
+}
+
+.branch-summary th, .branch-summary td {
+    border: 1px solid #ccc;
+    padding: 8px 12px; /* Adjust cell padding */
+    text-align: center;
+}
+
+.branch-summary thead th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.branch-summary tfoot td {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.branch-summary tbody td img {
+    max-width: 80px; /* Adjust the maximum image width */
+    height: auto;
+}
+/* Restaurant Section Styles */
+.restaurant-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Individual Restaurant Styles */
+.restaurant { /* Adjust the width as needed */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant img {
+    max-width: 100%;
+    height: auto;
+}
+
+.restaurant-info {
+    padding: 20px;
+    border-right: 3px solid red;
+}
+
+#info1{
+    border-right: none;
+}
+/* Events Links */
+.events-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.events-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+.restaurant{
+    margin:0;
+    padding: 0;
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+.container12 {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image-cell {
+    max-width: 100px;
+}
+.table21 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table21 td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table21 th {
+    background-color: #333;
+    color: #fff;
+}
+.event_btn1_wed{
+    font-size: large;
+    font-family: fantasy, Copperplate;
+    width: 50%;
+    height: 3em;
+    border: none;
+    background-color: #59F3B2;
+    border-radius: 8px;
+    transition: 1s;
+}
+.event_btn1_wed:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #1a2e21;
+    box-shadow: 3px 1px 30px #9dad06;
+}
+.btn1{
+    text-align: right;
+    padding-right: 1%;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#output {
+    font-weight: bold;
+    color: #333;
+}

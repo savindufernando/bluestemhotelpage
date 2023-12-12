@@ -1,0 +1,500 @@
+
+.logo{
+    width: 100px;
+    height:100px;
+    
+}
+/* Navigation styles */
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: right; /* Align navigation to the right */
+    font-size: large;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: #ff9900;
+}
+
+/* Change link color when clicked */
+nav a:active {
+    color: #ff0000;
+}
+.book-now-button {
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    transition: background-color 0.3s;
+}
+
+/* Change button background color on hover */
+.book-now-button:hover {
+    background-color: #ff6600;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.signin{
+    margin-right: auto;
+    width: 30px;
+}
+
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #FF5F1F;
+    margin: 6px 0;
+}
+
+.menu-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+
+.menu-link:hover {
+    background-color: #0056b3;
+}
+
+#costTable1,#costTable2 {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #593bc4;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+/* Styling for individual booking forms */
+.booking-form1 {
+    background-color: #cacaca;
+    border: 3px solid;
+    border-image:linear-gradient(  orange,red);
+    border-image-slice: 1;
+    animation: borderRainbow 10s linear infinite;
+    margin-top: 10px;
+    margin-bottom: 1500px;
+    border-radius: 5px;
+    padding: 70px;
+    width: 50%;
+    margin: auto;
+}
+
+.booking-form2 {
+    background-color: #cacaca;
+    border: 3px solid;
+    border-image:linear-gradient( yellow, orange);
+    border-image-slice: 1;
+    animation: borderRainbow 10s linear infinite;
+    margin-top: 1000px;
+    margin-bottom: 1500px;
+    border-radius: 5px;
+    padding: 70px;
+    width: 50%;
+    margin: auto;
+}
+
+.space{
+    
+    margin-top: 700px;
+    margin-bottom: 900px;
+}
+
+.ChooseRoom {
+    display: block;
+    margin: auto;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+}
+
+
+.booking-form1 h2 {
+    color: #0a1a2b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.booking-form2 h2 {
+    color: #0a1a2b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.booking-form3 h2 {
+    color: #0a1a2b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.booking-form4 h2 {
+    color: #0a1a2b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Styling for form elements */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.button-container {
+    text-align: right; /* Align buttons to the right */
+}
+
+/* Style for the Book Now button */
+#RoomBook {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+#RoomBook:hover {
+    background-color: #0056b3;
+}
+
+#AdventureBook {
+    background-color:#007bff; 
+    color: white; 
+    padding: 15px 20px; 
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+#AdfavBtn2{
+    background-color:#007bff; 
+    color: white; 
+    padding: 15px 20px; 
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+#AdfavBtn{
+    background-color: #340f13;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#AdventureBook:hover {
+    background-color:  #0056b3;
+}
+
+#DisplayAdventureBookings {
+    display: none; /* Initially hide the element */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background-color: #fcb87a;
+}
+
+#DisplayAdventureBookings.show {
+    display: block;
+}
+/* Style for the Clear button */
+#ClearButton {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#ClearButton:hover {
+    background-color: #bd2130;
+}
+
+#DisplayBookNow {
+    display: none; /* Initially hide the element */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background-color: #fcb87a;
+}
+
+#DisplayBookNow.show {
+    display: block;
+}
+
+#CheckLoyalty {
+    background-color: #d6c90c; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#CheckLoyalty:hover {
+    background-color: #a16618;
+}
+
+#DisplayLoyaltyPoints {
+    display: none; /* Initially hide the element */
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#DisplayLoyaltyPoints.show {
+    display: block;
+}
+
+
+@keyframes borderRainbow {
+    0% {
+        border-image-source: linear-gradient( orange, violet);
+    }
+    50% {
+        border-image-source: linear-gradient(red, orange, yellow);
+    }
+    100% {
+        border-image-source: linear-gradient( yellow, orange);
+    }
+}
+
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column; 
+    }
+
+    .booking-form {
+        width: 25%;
+    }
+}
+.your-class-name {
+    /* Your styles for the body element with this class */
+    background-color: #f0f0f0;
+    font-family: monospace;
+    font-size: medium ;
+    /* Add more styles as needed */
+  }
+  .h2{
+        font-size: x-large;
+        font-weight: 1000;
+  }
+
+/* Footer styles */
+.footer1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footercontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footersect {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.footersect h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footersect{
+    flex:1;
+    margin: 10px;
+    text-align:center;
+    border-right:1px solid #666;
+    padding-right: 20px; 
+}
+.footersect:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+.footersect h3{
+    border-right: none;
+    padding-right:0;
+}
+
+body {
+    background-image: url('Photoes/photo112255.jpg');
+    background-size:auto; /* Adjust to your needs */
+    /* Additional background properties can be added here */
+}
+
+
+
+  /* ... Your existing styles ... */
+
+/* Responsive styles for tablets */
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    nav {
+        text-align: left;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .bar {
+        margin: 6px 0;
+    }
+
+    .menu-link {
+        display: block;
+        margin-top: 0;
+    }
+
+    .book-now-button {
+        position: static;
+        margin-top: 10px;
+        right: auto;
+    }
+
+    .booking-form1,
+    .booking-form2 {
+        width: 100%;
+    }
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        text-align: right;
+    }
+
+    .book-now-button {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+        right: auto;
+    }
+
+    .booking-form1,
+    .booking-form2 {
+        width: 100%;
+    }
+}
+
